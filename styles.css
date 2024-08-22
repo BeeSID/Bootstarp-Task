@@ -1,0 +1,321 @@
+/* Reset some default styles for consistent rendering */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Custom CSS for Navbar */
+.navbar {
+    background-color: #d2ece3; /* Light green background */
+
+}
+
+.navbar .navbar-brand {
+    color: #000; /* Black color for brand */
+    font-size: 1.5rem; /* Larger font size for brand */
+    font-weight: 600; /* Bold font weight */
+}
+
+.navbar .nav-link {
+    color: #000; /* Black color for links */
+    font-weight: 500; /* Semi-bold font weight */
+    margin-right: 10px; /* Space between nav links */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover {
+    color: #28a745; /* Dark green hover color */
+}
+
+.navbar .dropdown-menu {
+    background-color: #d2ece3; /* Light green for dropdown background */
+    border: none; /* Remove border */
+}
+
+.navbar .dropdown-item {
+    color: #333; /* Dark color for dropdown items */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #28a745; /* Dark green background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Custom styles for search bar */
+.navbar .form-control {
+    border-radius: 50px; /* Circular border radius */
+    border: 2px solid #28a745; /* Dark green border for input */
+    padding-left: 40px; /* Add padding to accommodate icon */
+    position: relative;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.navbar .form-control:focus {
+    box-shadow: none; /* Remove box shadow on focus */
+    border-color: #28a745; /* Maintain dark green border on focus */
+}
+
+.navbar .search-icon {
+    position: absolute;
+    right: 20px; /* Position icon inside input */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #28a745; /* Icon color */
+    pointer-events: none; /* Make icon non-clickable */
+}
+
+/* Profile image size and border */
+.navbar .rounded-circle {
+    border: 2px solid #28a745; /* Dark green border around profile image */
+    transition: border-color 0.3s ease-in-out;
+}
+
+.navbar .rounded-circle:hover {
+    border-color: #fff; /* White border on hover */
+}
+
+/* Additional spacing for navbar items */
+.navbar .nav-item {
+    margin-left: 20px; /* Space between nav items */
+}
+
+/* Top content section */
+.section2 {
+    background: linear-gradient(to bottom, #d2ece3, #f0f0f0);
+    text-align: center;
+    max-width: 100%; /* Corrected to fit screen width */
+    padding-top: 100px;
+}
+
+.top-content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p, span {
+    color: #888; /* Gray text for paragraphs and spans */
+}
+
+/* Custom CSS for Search Bar Container */
+.search-bar-container {
+    background-color: #fff; /* White background for the container */
+    border: 2px solid #28a745; /* Dark green border for the container */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Style for the input-group */
+.input-group {
+    overflow: hidden; /* Ensure no content overflows */
+}
+
+.input-group-text {
+    /* border-radius: 50px 0 0 50px; Rounded corners for left side of input */
+    background-color: #d2ece3; /* Match the background color with form */
+    border: 2px solid #28a745; /* Dark green border */
+}
+
+.form-control {
+    
+    /* border-radius: 0 50px 50px 0; Rounded corners for right side of input */
+    border: 2px solid #28a745; /* Dark green border */
+    /* padding-left: 10px; Padding to avoid text overlap with icon */
+}
+
+/* Primary button styling */
+.btn-primary {
+    background-color: #2d8d53; /* Darker green */
+    border: none; /* Remove border */
+    border-radius: 50px; /* Rounded corners for button */
+    padding: 10px 20px; /* Add padding to button */
+    color: #fff; /* White text color */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #1e6b40; /* Darker green on hover */
+}
+
+/* Global link color */
+a {
+    color: #000; /* Black links */
+}
+
+a:hover {
+    color: #28a745; /* Dark green on hover */
+}
+
+/* Style for section with content and image */
+.top-contentimg {
+    max-width: 50%;
+    margin: 0 auto; /* Center image */
+}
+
+/* Container for the popular categories section */
+.popu-category-box {
+    background: #fff; /* Background color for the category box */
+    border: 1px solid #e0e0e0; /* Light border for the category box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    padding: 20px; /* Padding inside the category box */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.popu-category-box:hover {
+    background: #f5f5f5; /* Slightly darker background on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Lift the box on hover */
+}
+
+/* Icon styles */
+.popu-category-icon {
+    margin-bottom: 15px; /* Space below the icon */
+    display: inline-block; /* Aligns icon properly */
+}
+
+/* Icon size adjustment */
+.icons-md {
+    width: 3em;
+    height: 3em;
+}
+
+/* Content styling within the category box */
+.popu-category-content {
+    padding: 10px; /* Padding inside the content area */
+}
+
+.popu-category-content h5 {
+    font-size: 1.2em; /* Font size for the title */
+    font-weight: 600; /* Bold font weight for the title */
+    color: #28a745; /* Dark text color for the title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.popu-category-content p {
+    font-size: 0.9em; /* Font size for the description */
+    color: #777; /* Light gray color for the description */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Spacing between the rows */
+.row {
+    margin-top: 20px; /* Space above each row */
+}
+
+/* Margin and padding adjustments for columns */
+.col-md-6, .col-lg-3 {
+    margin-top: 20px; /* Space above each column */
+    padding-top: 20px; /* Space inside each column */
+}
+
+/* Basic container and row styling */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+/* Job box styling */
+.job-box {
+    border-radius: 0.375rem;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space below each job box */
+}
+
+.job-box img {
+    width: 100%;
+    height: auto;
+}
+
+.job-box .p-4 {
+    padding: 1.5rem;
+}
+
+.job-box .fs-17 {
+    font-size: 1.0625rem;
+}
+
+.job-box .text-dark {
+    color: #343a40;
+}
+
+.job-box .text-muted {
+    color: #6c757d;
+}
+
+.job-box .badge {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.bg-success-subtle {
+    background-color: #d4edda;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+.bg-warning-subtle {
+    background-color: #fff3cd;
+}
+
+.text-warning {
+    color: #ffc107;
+}
+
+.bg-info-subtle {
+    background-color: #d1ecf1;
+}
+
+.text-info {
+    color: #17a2b8;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+/* Favorite icon */
+.favorite-icon {
+    text-align: right;
+}
+
+.favorite-icon i {
+    font-size: 1.125rem;
+    color: #6c757d;
+}
+
+/* Keywords and Apply Now link */
+.primary-link {
+    color: #007bff;
+}
+
+.primary-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.text-md-end {
+    text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
